@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 
-
 namespace LinqBasic
 {
     class Program
@@ -24,6 +23,9 @@ namespace LinqBasic
 
             IEnumerable<Person> personsWithOddId = personRetriver.GetOddIds(persons);
 
+            IEnumerable<Person> peronssOrderByIdDesc = personRetriver.OrderById(persons);
+
+            IEnumerable<Person> personsWithOddId = personRetriver.GetOddIds(persons);
         }
     }
 }
