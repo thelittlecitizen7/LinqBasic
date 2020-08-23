@@ -8,7 +8,7 @@ namespace LinqBasic
     class Program
     {
 
-   
+
         static void Main(string[] args)
         {
             IEnumerable<Person> persons = new List<Person>()
@@ -25,7 +25,7 @@ namespace LinqBasic
                                                    Name = "Tami",
                                                    PersonGender = Gender.Female
                                                },
-                                                                                              new Person()
+                                           new Person()
                                                {
                                                    Id = 3,
                                                    Name = "Nadav",
@@ -43,7 +43,7 @@ namespace LinqBasic
 
 
             IEnumerable<Person> personsWithOddId = personRetriver.GetOddIds(persons);
-            
+
         }
 
 
